@@ -322,3 +322,89 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
   padding-top: 0.75rem;
   margin-top: auto;
 }
+
+/* ===== TELECOMUNICACIONES ===== */
+.telecoms__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .telecoms__grid { grid-template-columns: 1fr; }
+}
+
+.threat-item {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.threat-item:last-child { border-bottom: none; }
+
+.threat-item__number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-green);
+  min-width: 80px;
+  line-height: 1;
+}
+
+.threat-item__info {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.threat-item__info strong { color: var(--text-primary); }
+
+.threat-item__source {
+  display: block;
+  font-size: 0.7rem;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+
+.telecoms__reg-title {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-mono);
+}
+
+.reg-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.reg-card--green { border-left: 3px solid var(--accent-green); }
+
+.reg-card__badge {
+  font-size: 0.75rem;
+  color: var(--accent-cyan);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.reg-card__desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.reg-card__source {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  display: block;
+  margin-top: 0.5rem;
+}
