@@ -709,3 +709,27 @@ a.proposed-course {
   cursor: pointer;
   text-decoration: none;
 }
+
+.module-hours {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--accent-green);
+  margin-top: 0.5rem;
+  opacity: 0.8;
+}
+
+.course-meta {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.course-meta__item {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+}
