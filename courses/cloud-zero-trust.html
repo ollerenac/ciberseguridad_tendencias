@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloud Security & Zero Trust · CiberFormación 2025</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <style>
+    .course-hero { padding: 7rem 0 4rem; border-bottom: 1px solid var(--border); }
+    .course-tag { font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-green); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 1rem; display: block; }
+    .course-title { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 900; margin-bottom: 1rem; }
+    .course-lead { font-size: 1.1rem; color: var(--text-secondary); max-width: 640px; line-height: 1.7; }
+    .back-link { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); margin-bottom: 2rem; transition: color 0.3s; }
+    .back-link:hover { color: var(--accent-cyan); }
+    .content-section { padding: 4rem 0; border-bottom: 1px solid var(--border); }
+    .content-section:last-child { border-bottom: none; }
+    .content-section h2 { font-size: 1.4rem; color: var(--accent-cyan); margin-bottom: 2rem; font-family: var(--font-mono); }
+    .why-block { background: var(--bg-card); border: 1px solid rgba(0,229,255,0.2); border-left: 3px solid var(--accent-cyan); border-radius: var(--radius-lg); padding: 2rem; margin-bottom: 1.5rem; }
+    .why-block p { color: var(--text-secondary); line-height: 1.8; font-size: 0.95rem; margin-bottom: 1rem; }
+    .why-block p:last-child { margin-bottom: 0; }
+    .why-block strong { color: var(--text-primary); }
+    .modules-list { display: flex; flex-direction: column; gap: 1rem; }
+    .module-item { display: flex; gap: 1.5rem; align-items: flex-start; padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); }
+    .module-num { font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-cyan); flex-shrink: 0; padding-top: 0.15rem; min-width: 28px; }
+    .module-title { font-size: 0.95rem; color: var(--text-primary); font-weight: 600; margin-bottom: 0.25rem; }
+    .module-desc { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <div class="nav__logo">CiberFormación 2025</div>
+    <ul class="nav__links">
+      <li><a href="../index.html#panorama">Panorama</a></li>
+      <li><a href="../index.html#telecoms">Telecoms</a></li>
+      <li><a href="../index.html#tendencias">Tendencias</a></li>
+      <li><a href="../index.html#cursos">Cursos</a></li>
+      <li><a href="../index.html#contacto" class="nav__cta">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="course-hero">
+      <div class="container">
+        <a href="../index.html#cursos" class="back-link">← Volver a cursos</a>
+        <span class="course-tag">Curso 03 · Cloud & Arquitectura</span>
+        <h1 class="course-title">Cloud Security &amp;<br /><span style="color: var(--accent-cyan);">Zero Trust Architecture</span></h1>
+        <p class="course-lead">Para arquitectos y profesionales de seguridad que necesitan diseñar y auditar entornos cloud-native con el principio de confianza cero.</p>
+      </div>
+    </section>
+
+    <section class="content-section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <h2>¿Por qué este curso?</h2>
+        <div class="why-block">
+          <p>Los operadores de telecomunicaciones están migrando sus core networks a arquitecturas cloud-native (especialmente el 5G Core). Sin embargo, <strong>solo el 13% de organizaciones telecom cifra más del 60% de sus datos en la nube</strong> (Thales Telecom DTR, 2023) — una exposición crítica en entornos donde la confidencialidad es regulatoria.</p>
+          <p>El modelo de seguridad perimetral tradicional ("confía en todo lo que está dentro") ya no funciona en entornos multi-nube. <strong>Zero Trust</strong> (NIST SP 800-207) reemplaza ese modelo con verificación continua de identidad, acceso mínimo privilegiado y microsegmentación — principios que el sector telecom necesita adoptar urgentemente.</p>
+          <p>El <strong>50% de organizaciones telecom</strong> identifica el error humano y la mala configuración como el principal vector de entrada (Thales, 2023). Un profesional formado en Cloud Security reduce drásticamente ese riesgo al conocer qué configuraciones son peligrosas y cómo auditarlas sistemáticamente.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <h2>Contenido del curso</h2>
+        <div class="modules-list">
+          <div class="module-item">
+            <span class="module-num">M1</span>
+            <div>
+              <div class="module-title">Fundamentos de seguridad cloud para telecoms</div>
+              <div class="module-desc">Modelo de responsabilidad compartida en AWS/Azure/GCP, principales vectores de ataque en entornos cloud-native, IAM básico.</div>
+            </div>
+          </div>
+          <div class="module-item">
+            <span class="module-num">M2</span>
+            <div>
+              <div class="module-title">Arquitectura Zero Trust — NIST SP 800-207</div>
+              <div class="module-desc">Principios fundamentales, componentes del modelo (PEP/PDP), implementación práctica en entornos híbridos y multi-nube.</div>
+            </div>
+          </div>
+          <div class="module-item">
+            <span class="module-num">M3</span>
+            <div>
+              <div class="module-title">Gestión de identidades y acceso privilegiado</div>
+              <div class="module-desc">IAM en la nube, PAM (Privileged Access Management), MFA resistente a phishing, políticas de acceso condicional.</div>
+            </div>
+          </div>
+          <div class="module-item">
+            <span class="module-num">M4</span>
+            <div>
+              <div class="module-title">Detección de misconfiguraciones cloud</div>
+              <div class="module-desc">CSPM (Cloud Security Posture Management), auditoría de buckets S3/Blob Storage, CIS Benchmarks para cloud.</div>
+            </div>
+          </div>
+          <div class="module-item">
+            <span class="module-num">M5</span>
+            <div>
+              <div class="module-title">CASB y monitoreo continuo</div>
+              <div class="module-desc">Cloud Access Security Brokers, visibilidad de shadow IT, DLP en entornos cloud, integración con SIEM.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__text mono">CiberFormación 2025</span>
+      <a href="../index.html#contacto" class="hero__cta" style="font-size: 0.85rem; padding: 0.6rem 1.5rem;">Agendar reunión →</a>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

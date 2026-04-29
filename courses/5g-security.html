@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seguridad en Redes 5G · CiberFormación 2025</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <style>
+    .course-hero { padding: 7rem 0 4rem; border-bottom: 1px solid var(--border); }
+    .course-tag { font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-green); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 1rem; display: block; }
+    .course-title { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 900; margin-bottom: 1rem; }
+    .course-lead { font-size: 1.1rem; color: var(--text-secondary); max-width: 640px; line-height: 1.7; }
+    .back-link { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); margin-bottom: 2rem; transition: color 0.3s; }
+    .back-link:hover { color: var(--accent-cyan); }
+    .content-section { padding: 4rem 0; border-bottom: 1px solid var(--border); }
+    .content-section:last-child { border-bottom: none; }
+    .content-section h2 { font-size: 1.4rem; color: var(--accent-cyan); margin-bottom: 2rem; font-family: var(--font-mono); }
+    .why-block { background: var(--bg-card); border: 1px solid rgba(0,229,255,0.2); border-left: 3px solid var(--accent-cyan); border-radius: var(--radius-lg); padding: 2rem; margin-bottom: 1.5rem; }
+    .why-block p { color: var(--text-secondary); line-height: 1.8; font-size: 0.95rem; margin-bottom: 1rem; }
+    .why-block p:last-child { margin-bottom: 0; }
+    .why-block strong { color: var(--text-primary); }
+    .modules-list { display: flex; flex-direction: column; gap: 1rem; }
+    .module-item { display: flex; gap: 1.5rem; align-items: flex-start; padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); }
+    .module-num { font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-cyan); flex-shrink: 0; padding-top: 0.15rem; min-width: 28px; }
+    .module-title { font-size: 0.95rem; color: var(--text-primary); font-weight: 600; margin-bottom: 0.25rem; }
+    .module-desc { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <div class="nav__logo">CiberFormación 2025</div>
+    <ul class="nav__links">
+      <li><a href="../index.html#panorama">Panorama</a></li>
+      <li><a href="../index.html#telecoms">Telecoms</a></li>
+      <li><a href="../index.html#tendencias">Tendencias</a></li>
+      <li><a href="../index.html#cursos">Cursos</a></li>
+      <li><a href="../index.html#contacto" class="nav__cta">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="course-hero">
+      <div class="container">
+        <a href="../index.html#cursos" class="back-link">← Volver a cursos</a>
+        <span class="course-tag">Curso 01 · Infraestructura</span>
+        <h1 class="course-title">Seguridad en<br /><span style="color: var(--accent-cyan);">Redes 5G</span></h1>
+        <p class="course-lead">Diseñado para ingenieros y profesionales de telecomunicaciones que necesitan entender, auditar y defender infraestructuras 5G en producción.</p>
+      </div>
+    </section>
+
+    <section class="content-section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <h2>¿Por qué este curso?</h2>
+        <div class="why-block">
+          <p>Los fabricantes de equipos (Ericsson, Nokia, Huawei) aseguran el <strong>hardware y el software de fábrica</strong>. Sin embargo, la seguridad de una red 5G en producción depende de cómo el operador la <strong>despliega, configura y opera</strong>. Esa brecha es donde ocurren los incidentes reales.</p>
+          <p>El caso <strong>Salt Typhoon (2024)</strong> es el ejemplo más claro: nueve operadoras de EEUU fueron comprometidas no por fallas del fabricante, sino por infraestructura CALEA mal aislada. Cisco confirmó que en uno de los casos el acceso no detectado duró <strong>3 años</strong>.</p>
+          <p>Adicionalmente, 5G introduce superficies de ataque que las generaciones anteriores no tenían: <strong>network slicing</strong> (un slice comprometido puede afectar a otros), <strong>Service Based Architecture</strong> con APIs REST expuestas al core, y <strong>edge computing (MEC)</strong> con cargas de trabajo corriendo cerca de la red de acceso.</p>
+          <p>El <strong>DS 017-2024-PCM</strong> y la <strong>ESNACIB 2026-2028</strong> exigen que los operadores peruanos demuestren controles activos sobre infraestructura crítica. No basta con usar equipo certificado — se necesita personal que sepa qué auditar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <h2>Contenido del curso</h2>
+        <div class="modules-list">
+          <div class="module-item">
+            <span class="module-num">M1</span>
+            <div>
+              <div class="module-title">Arquitectura de seguridad 5G — 3GPP TS 33.501</div>
+              <div class="module-desc">Revisión del estándar base: autenticación SUPI/SUCI, protección de interfaces N2/N3, cifrado de plano de usuario.</div>
+            </div>
+          </div>
+          <div class="module-item">
+            <span class="module-num">M2</span>
+            <div>
+              <div class="module-title">Seguridad en Network Slicing</div>
+              <div class="module-desc">Aislamiento entre slices, gestión de identidades por slice, vectores de ataque cross-slice y políticas de segmentación.</div>
+            </div>
+          </div>
+          <div class="module-item">
+            <span class="module-num">M3</span>
+            <div>
+              <div class="module-title">Service Based Architecture (SBA) y APIs de core</div>
+              <div class="module-desc">Seguridad de APIs REST en el 5G Core, OAuth 2.0 en NRF/SEPP, hardening de interfaces de gestión.</div>
+            </div>
+          </div>
+          <div class="module-item">
+            <span class="module-num">M4</span>
+            <div>
+              <div class="module-title">Hardening de despliegue y auditoría</div>
+              <div class="module-desc">Checklist de configuración segura para gNB y core, herramientas de auditoría, casos reales incluyendo Salt Typhoon.</div>
+            </div>
+          </div>
+          <div class="module-item">
+            <span class="module-num">M5</span>
+            <div>
+              <div class="module-title">Respuesta a incidentes en entornos 5G</div>
+              <div class="module-desc">Detección de anomalías en tráfico de señalización, procedimientos de contención, cumplimiento con DS 017-2024-PCM.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__text mono">CiberFormación 2025</span>
+      <a href="../index.html#contacto" class="hero__cta" style="font-size: 0.85rem; padding: 0.6rem 1.5rem;">Agendar reunión →</a>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

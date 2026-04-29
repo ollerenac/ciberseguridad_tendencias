@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI para Detección de Amenazas · CiberFormación 2025</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <style>
+    .course-hero { padding: 7rem 0 4rem; border-bottom: 1px solid var(--border); }
+    .course-tag { font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-green); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 1rem; display: block; }
+    .course-title { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 900; margin-bottom: 1rem; }
+    .course-lead { font-size: 1.1rem; color: var(--text-secondary); max-width: 640px; line-height: 1.7; }
+    .back-link { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); margin-bottom: 2rem; transition: color 0.3s; }
+    .back-link:hover { color: var(--accent-cyan); }
+    .content-section { padding: 4rem 0; border-bottom: 1px solid var(--border); }
+    .content-section:last-child { border-bottom: none; }
+    .content-section h2 { font-size: 1.4rem; color: var(--accent-cyan); margin-bottom: 2rem; font-family: var(--font-mono); }
+    .why-block { background: var(--bg-card); border: 1px solid rgba(0,229,255,0.2); border-left: 3px solid var(--accent-cyan); border-radius: var(--radius-lg); padding: 2rem; margin-bottom: 1.5rem; }
+    .why-block p { color: var(--text-secondary); line-height: 1.8; font-size: 0.95rem; margin-bottom: 1rem; }
+    .why-block p:last-child { margin-bottom: 0; }
+    .why-block strong { color: var(--text-primary); }
+    .modules-list { display: flex; flex-direction: column; gap: 1rem; }
+    .module-item { display: flex; gap: 1.5rem; align-items: flex-start; padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); }
+    .module-num { font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-cyan); flex-shrink: 0; padding-top: 0.15rem; min-width: 28px; }
+    .module-title { font-size: 0.95rem; color: var(--text-primary); font-weight: 600; margin-bottom: 0.25rem; }
+    .module-desc { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <div class="nav__logo">CiberFormación 2025</div>
+    <ul class="nav__links">
+      <li><a href="../index.html#panorama">Panorama</a></li>
+      <li><a href="../index.html#telecoms">Telecoms</a></li>
+      <li><a href="../index.html#tendencias">Tendencias</a></li>
+      <li><a href="../index.html#cursos">Cursos</a></li>
+      <li><a href="../index.html#contacto" class="nav__cta">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="course-hero">
+      <div class="container">
+        <a href="../index.html#cursos" class="back-link">← Volver a cursos</a>
+        <span class="course-tag">Curso 04 · Inteligencia & Automatización</span>
+        <h1 class="course-title">AI aplicada a la<br /><span style="color: var(--accent-cyan);">Detección de Amenazas</span></h1>
+        <p class="course-lead">Para analistas SOC y profesionales de seguridad que necesitan escalar su capacidad de detección frente a un volumen de amenazas que los métodos tradicionales ya no pueden manejar.</p>
+      </div>
+    </section>
+
+    <section class="content-section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <h2>¿Por qué este curso?</h2>
+        <div class="why-block">
+          <p>Las redes de telecomunicaciones generan volúmenes de telemetría que ningún equipo humano puede analizar manualmente. Con <strong>420 millones de ataques a infraestructura crítica por año</strong> — 13 por segundo (KnowBe4, 2024) — la detección basada en firmas y reglas estáticas llega tarde o simplemente no escala.</p>
+          <p>La inteligencia artificial permite detectar <strong>comportamientos anómalos que no tienen firma conocida</strong>: movimiento lateral lento, exfiltración gradual de datos, accesos fuera de patrón. El caso Salt Typhoon, donde el acceso pasó desapercibido durante 3 años en algunos operadores, es el argumento más contundente para adoptar detección basada en comportamiento.</p>
+          <p>El mercado ya lo refleja: las plataformas <strong>XDR (Extended Detection and Response)</strong> y los sistemas <strong>SOAR</strong> con capacidades de ML son ahora el estándar en SOCs de nivel enterprise. Los profesionales certificados en estas tecnologías tienen una de las mayores tasas de empleabilidad del sector.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <h2>Contenido del curso</h2>
+        <div class="modules-list">
+          <div class="module-item">
+            <span class="module-num">M1</span>
+            <div>
+              <div class="module-title">Machine Learning aplicado a ciberseguridad</div>
+              <div class="module-desc">Fundamentos de clasificación y detección de anomalías, modelos supervisados vs no supervisados, datasets de seguridad.</div>
+            </div>
+          </div>
+          <div class="module-item">
+            <span class="module-num">M2</span>
+            <div>
+              <div class="module-title">UEBA — Análisis de comportamiento de usuarios y entidades</div>
+              <div class="module-desc">Baseline de comportamiento, detección de desviaciones, casos de uso en entornos telecom (accesos privilegiados, APIs).</div>
+            </div>
+          </div>
+          <div class="module-item">
+            <span class="module-num">M3</span>
+            <div>
+              <div class="module-title">Plataformas XDR y correlación de eventos</div>
+              <div class="module-desc">Arquitectura XDR, ingesta de telemetría multi-fuente, correlación automática de incidentes, reducción de falsos positivos.</div>
+            </div>
+          </div>
+          <div class="module-item">
+            <span class="module-num">M4</span>
+            <div>
+              <div class="module-title">SOAR — Automatización de respuesta</div>
+              <div class="module-desc">Playbooks de respuesta automatizada, integración con ticketing y SIEM, métricas de tiempo de respuesta (MTTR).</div>
+            </div>
+          </div>
+          <div class="module-item">
+            <span class="module-num">M5</span>
+            <div>
+              <div class="module-title">Threat Hunting con asistencia de AI</div>
+              <div class="module-desc">Hipótesis de búsqueda, queries en plataformas como Splunk/Elastic, MITRE ATT&CK como guía de cobertura de detección.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__text mono">CiberFormación 2025</span>
+      <a href="../index.html#contacto" class="hero__cta" style="font-size: 0.85rem; padding: 0.6rem 1.5rem;">Agendar reunión →</a>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
