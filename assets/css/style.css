@@ -703,3 +703,9 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
   color: var(--text-muted);
   font-size: 0.75rem;
 }
+
+a.proposed-course {
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+}
