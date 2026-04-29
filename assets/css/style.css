@@ -698,3 +698,8 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
   .hero__stat { flex-direction: column; gap: 0.5rem; }
   .nav { padding: 1rem 1.25rem; }
 }
+
+.footer__text {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}

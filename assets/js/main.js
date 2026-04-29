@@ -13,6 +13,7 @@ revealElements.forEach(el => observer.observe(el));
 
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
+  if (!nav) return;
   nav.style.boxShadow = window.scrollY > 50
     ? '0 4px 30px rgba(0,0,0,0.5)'
     : 'none';
